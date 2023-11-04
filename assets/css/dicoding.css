@@ -1,0 +1,83 @@
+body {
+  background: url("/assets/background.jpg");
+}
+
+.header {
+  text-align: center;
+  padding: 20px 15%;
+}
+
+.img-navbar {
+  float: left;
+  width: 220px;
+  margin-left: 20px;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+
+.navbar .malang {
+  margin-bottom: 15px;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-top: 18px;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 25px;
+  margin-left: 20px;
+  justify-content: space-between;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #b6895b;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar a:hover::after {
+  transform: scaleX(0.4);
+}
+
+.navbar a {
+  color: black;
+  margin: 0 0.4rem;
+}
+
+.navbar a:hover {
+  color: #b6895b;
+}
+
+.content {
+  text-align: center;
+  margin: 40px 300px;
+  height: 81%;
+
+  background-color: red;
+}
