@@ -97,7 +97,6 @@ html {
 }
 
 .ornamen {
-  /* margin-top: 100px; */
   border: 5px solid var(--primary);
   position: absolute;
   margin-top: -250px;
@@ -129,7 +128,7 @@ html {
   position: absolute;
   line-height: 55px;
   top: 50%;
-  left: 50%;
+  left: 53%;
   letter-spacing: 10px;
   transform: translate(-50%, -50%);
 }
@@ -163,4 +162,149 @@ html {
   50% {
     width: 100%;
   }
+}
+
+.button {
+  margin-top: 35px;
+  height: 10%;
+}
+
+.button a {
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
+  align-items: center; /* Menengahkan vertikal */
+  justify-content: center; /* Menengahkan horizontal */
+  padding: 1rem 2rem;
+}
+
+.arrow {
+  /* animation: move 1.1s infinite ease-in-out; */
+  overflow: hidden;
+  background-color: red;
+}
+
+@keyframes move {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: 50px;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+/* Sejarah */
+#sejarah{
+  padding: 70rem 7% 1.4rem;
+}
+
+#sejarah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#sejarah .sejarah-text {
+  flex: 1;
+}
+
+#sejarah .sejarah-text h1 {
+  color: var(--primary);
+}
+
+#sejarah .sejarah-text p {
+  color: white;
+  margin-top: 10px;
+}
+
+#sejarah .sejarah-image {
+  flex: 1;
+}
+
+#sejarah .sejarah-image aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sejarah .sejarah-image aside img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-left: 100px;
+}
+
+/* Wisata */
+#wisata{
+  padding: 35rem 7% 1.4rem;
+}
+.karangkates h2,
+.karangkates p {
+  flex: 1;
+  color: white;
+}
+
+.karangkates .karangkates1 aside img,
+.karangkates .karangkates2 aside img,
+.karangkates .karangkates3 aside img {
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px var(--primary);
+}
+
+.karangkates .karangkates1 aside img {
+  margin-left: 280px;
+}
+
+.karangkates .karangkates2 aside img {
+  margin-top: -170px;
+}
+
+.karangkates .karangkates3 aside img {
+  margin-left: 280px;
+  margin-top: -100px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+}
+
+footer .social {
+  padding: 1rem 0;
+}
+
+footer .social a {
+  color: #fff;
+  margin: 1rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+  color: var(--bg);
+}
+
+footer .links {
+  margin-bottom: 1.3rem;
+}
+
+footer .links a {
+  color: #fff;
+  padding: 0.7rem 0.6rem;
+}
+
+footer .credit {
+  font-size: 1rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
 }
