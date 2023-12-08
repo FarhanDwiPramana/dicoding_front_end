@@ -37,6 +37,24 @@ html {
   z-index: 9999;
 }
 
+.navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+
+  &[href="#beranda"] {
+    color: var(--primary);
+  }
+
+  &[href="#sejarah"] {
+    color: var(--primary);
+  }
+
+  &[href="#wisata"] {
+    color: var(--primary);
+  }
+}
+
 .navbar .navbar-logo {
   font-size: 2rem;
   font-weight: 700;
@@ -173,13 +191,12 @@ html {
   background-color: var(--primary);
   color: #fff;
   display: flex;
-  align-items: center; /* Menengahkan vertikal */
-  justify-content: center; /* Menengahkan horizontal */
+  align-items: center;
+  justify-content: center;
   padding: 1rem 2rem;
 }
 
 .arrow {
-  /* animation: move 1.1s infinite ease-in-out; */
   overflow: hidden;
   background-color: red;
 }
@@ -197,8 +214,8 @@ html {
 }
 
 /* Sejarah */
-#sejarah{
-  padding: 70rem 7% 1.4rem;
+#sejarah {
+  padding: 47rem 7% 1.4rem;
 }
 
 #sejarah {
@@ -238,9 +255,10 @@ html {
 }
 
 /* Wisata */
-#wisata{
-  padding: 35rem 7% 1.4rem;
+#wisata {
+  padding: 10rem 7% 1.4rem;
 }
+
 .karangkates h2,
 .karangkates p {
   flex: 1;
@@ -307,4 +325,40 @@ footer .credit {
 footer .credit a {
   color: var(--bg);
   font-weight: 700;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo {
+    margin-bottom: 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+
+  .navbar-nav li {
+    margin: 8px 0;
+  }
+
+  .ornamen {
+    display: none;
+  }
+
+  #beranda,
+  #sejarah,
+  #wisata {
+    padding: 2rem 7% 1.4rem;
+  }
+
+  #sejarah .sejarah-image aside img {
+    margin-left: 0;
+  }
 }
