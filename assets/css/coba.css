@@ -1,0 +1,183 @@
+:root {
+  --primary: #059cf9;
+  --bg: #010101;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  /* background-color: black; */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 7%;
+  background-color: rgba(1, 1, 1, 0.8);
+  border-bottom: 3px solid var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-logo {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #fff;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+  font-size: 50px;
+}
+
+.navbar .navbar-logo {
+  font-size: 35px;
+}
+
+.navbar .navbar-nav ul {
+  display: flex;
+  list-style-type: none;
+  margin-top: 15px;
+  gap: 150px;
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.navbar .navbar-nav {
+  margin-left: auto;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.4);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 0.4rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+/* Beranda */
+#beranda {
+  /* padding: 47rem 7% 1.4rem; */
+  margin-top: 140px;
+  color: black;
+  text-align: center;
+}
+
+.text {
+  color: var(--primary);
+  font-size: 55px;
+  display: inline-block; /* Menjadikan elemen inline-block untuk dapat diatur center */
+  text-align: center; /* Pusatkan teks */
+  width: 100%;
+  overflow: hidden;
+  animation: typing 4s steps(12) infinite,
+    cursor 0.8s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  0% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+}
+
+.isi {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 30px;
+  margin-top: 15px;
+  opacity: 0.9;
+  background-color: #f7f7f7;
+}
+
+/* Footer */
+footer {
+  background-color: var(--primary);
+  text-align: center;
+  padding: 1rem 0 1rem;
+  margin-top: 3rem;
+}
+
+footer .credit {
+  font-size: 1rem;
+}
+
+footer .credit a {
+  color: var(--bg);
+  font-weight: 700;
+}
+
+/* Asside */
+aside {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin-top: 140px;
+  align-items: center;
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.content {
+  float: right;
+  width: 75%;
+}
+
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+main {
+  min-height: 100vh;
+}
